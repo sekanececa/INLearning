@@ -1,3 +1,4 @@
+package main;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -20,7 +21,10 @@ public class DragAndDrop {
 		
 		actions.dragAndDrop(image, box).build().perform();
 		
-		Thread.sleep(400);
+		
+		
+		
+		Thread.sleep(1000);
 		driver.quit();
 	}
 

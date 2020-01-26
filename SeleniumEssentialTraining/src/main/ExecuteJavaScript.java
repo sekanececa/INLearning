@@ -1,5 +1,7 @@
+package main;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class ExecuteJavaScript {
 
@@ -13,7 +15,13 @@ public class ExecuteJavaScript {
 		WebElement modalButton=driver.findElement(By.id("modal-button"));
 		modalButton.click();
 		
+		
+		
 		WebElement closeButton=driver.findElement(By.id("close-button"));
+		
+	    //Actions actions = new Actions(driver);
+		//actions.moveToElement(closeButton);
+		//actions.perform();
 		
 	    JavascriptExecutor js=(JavascriptExecutor)driver;
 	    js.executeScript("arguments[0].click();", closeButton);
